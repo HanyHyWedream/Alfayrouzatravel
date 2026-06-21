@@ -1,0 +1,78 @@
+.footer {
+  background-color: #0d1f3c;
+  padding: 60px 60px 0 60px;
+}
+
+.footer-inner {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+  padding-bottom: 60px;
+}
+
+.footer-left {
+  max-width: 320px;
+}
+
+.footer-brand {
+  font-size: 22px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 14px;
+  font-family: 'Georgia', serif;
+}
+
+.footer-tagline {
+  font-family: sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+}
+
+.footer-col {
+  min-width: 140px;
+}
+
+.footer-col-title {
+  font-family: sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #c9a84c;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col ul li {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-col ul a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  transition: color 0.2s;
+}
+
+.footer-col ul a:hover {
+  color: #c9a84c;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-family: sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+}

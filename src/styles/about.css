@@ -1,0 +1,80 @@
+.about {
+  background-color: #f0ebe0;
+  min-height: 100vh;
+}
+
+.about-hero {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 80px 60px 60px 60px;
+}
+
+.about-label {
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #c9a84c;
+  margin-bottom: 20px;
+}
+
+.about-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: #0d1f3c;
+  line-height: 1.1;
+  margin-bottom: 40px;
+  font-family: 'Georgia', serif;
+}
+
+.about-body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-body p {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #0d1f3c;
+  line-height: 1.8;
+}
+
+.about-divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 60px;
+}
+
+.about-stats {
+  display: flex;
+  gap: 80px;
+  padding: 80px 60px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-number {
+  font-size: 52px;
+  font-weight: 700;
+  color: #0d1f3c;
+  font-family: 'Georgia', serif;
+}
+
+.stat-label {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #555;
+}
+
+.stat-number.gold {
+  color: #c9a84c;
+}
+
+.stat-label.gold {
+  color: #c9a84c;
+}

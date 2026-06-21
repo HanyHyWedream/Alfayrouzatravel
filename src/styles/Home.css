@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f0ebe0;
+  color: #1a1a1a;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-color: #3a2010;
+  display: flex;
+  align-items: flex-end;
+  padding: 80px 60px;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 60%, transparent 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-title {
+  font-size: 64px;
+  line-height: 1.1;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-title-gold {
+  color: #c9a84c;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hero-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+/* TOURS SECTION */
+.tours-section {
+  padding: 80px 60px;
+  background-color: #f0ebe0;
+}
+
+.tours-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.tours-label {
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #c9a84c;
+  margin-bottom: 8px;
+}
+
+.tours-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.tours-all {
+  text-decoration: none;
+  color: #0d1f3c;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tours-all:hover {
+  color: #c9a84c;
+}
+
+.tours-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.tour-card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s;
+}
+
+.tour-card:hover {
+  transform: translateY(-4px);
+}
+
+.tour-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.tour-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.tour-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+  font-family: sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.tour-info {
+  padding: 20px;
+}
+
+.tour-meta {
+  display: flex;
+  gap: 16px;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.tour-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.tour-desc {
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.tour-link {
+  text-decoration: none;
+  color: #0d1f3c;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.tour-link:hover {
+  color: #c9a84c;
+}
+
+/* CTA */
+.cta-section {
+  padding: 60px;
+  background-color: #f0ebe0;
+}
+
+.cta-box {
+  background-color: #0d1f3c;
+  border-radius: 20px;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.cta-left {
+  max-width: 520px;
+}
+
+.cta-title {
+  font-size: 32px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 14px;
+  font-family: 'Georgia', serif;
+}
+
+.cta-text {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.btn-whatsapp {
+  background-color: #c9a84c;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #b8973e;
+}
+
+.btn-request {
+  background-color: transparent;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 30px;
+  border: 1px solid white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.btn-request:hover {
+  background-color: white;
+  color: #0d1f3c;
+}

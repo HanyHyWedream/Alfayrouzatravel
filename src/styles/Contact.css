@@ -1,21 +1,19 @@
 .contact {
   background-color: #f0ebe0;
   min-height: 100vh;
-  padding: 80px 60px;
+  padding: 48px 20px;
 }
 
 .contact-inner {
   display: flex;
-  gap: 80px;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* LEFT */
 .contact-left {
-  flex: 1;
-  min-width: 280px;
+  width: 100%;
 }
 
 .contact-label {
@@ -27,7 +25,7 @@
 }
 
 .contact-title {
-  font-size: 52px;
+  font-size: clamp(28px, 7vw, 52px);
   font-weight: 700;
   color: #0d1f3c;
   font-family: 'Georgia', serif;
@@ -76,24 +74,22 @@
   text-decoration: none;
 }
 
-.contact-info a:hover {
-  color: #c9a84c;
-}
+.contact-info a:hover { color: #c9a84c; }
 
-/* RIGHT — FORM */
 .contact-form {
-  flex: 1.4;
+  width: 100%;
   background-color: white;
   border-radius: 20px;
-  padding: 48px;
+  padding: 28px 20px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
 }
 
 .form-row {
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -102,10 +98,6 @@
   flex-direction: column;
   gap: 8px;
   flex: 1;
-}
-
-.form-group.full {
-  width: 100%;
 }
 
 .form-group label {
@@ -166,4 +158,30 @@
   font-size: 12px;
   color: #999;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    padding: 80px 60px;
+  }
+
+  .contact-inner {
+    flex-direction: row;
+    gap: 80px;
+    align-items: flex-start;
+  }
+
+  .contact-left {
+    flex: 1;
+    min-width: 280px;
+  }
+
+  .contact-form {
+    flex: 1.4;
+    padding: 48px;
+  }
+
+  .form-row {
+    flex-direction: row;
+  }
 }

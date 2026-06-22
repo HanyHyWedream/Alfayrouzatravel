@@ -6,7 +6,7 @@
 .about-hero {
   max-width: 860px;
   margin: 0 auto;
-  padding: 80px 60px 60px 60px;
+  padding: 48px 20px 32px;
 }
 
 .about-label {
@@ -18,11 +18,11 @@
 }
 
 .about-title {
-  font-size: 56px;
+  font-size: clamp(28px, 7vw, 56px);
   font-weight: 700;
   color: #0d1f3c;
   line-height: 1.1;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
   font-family: 'Georgia', serif;
 }
 
@@ -34,20 +34,21 @@
 
 .about-body p {
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #0d1f3c;
   line-height: 1.8;
 }
 
 .about-divider {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 0 60px;
+  margin: 0 20px;
 }
 
 .about-stats {
   display: flex;
-  gap: 80px;
-  padding: 80px 60px;
+  flex-direction: column;
+  gap: 32px;
+  padding: 48px 20px;
   max-width: 860px;
   margin: 0 auto;
 }
@@ -59,7 +60,7 @@
 }
 
 .stat-number {
-  font-size: 52px;
+  font-size: clamp(36px, 8vw, 52px);
   font-weight: 700;
   color: #0d1f3c;
   font-family: 'Georgia', serif;
@@ -67,14 +68,31 @@
 
 .stat-label {
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   color: #555;
 }
 
-.stat-number.gold {
-  color: #c9a84c;
+.stat-number.gold { color: #c9a84c; }
+.stat-label.gold { color: #c9a84c; }
+
+@media (min-width: 600px) {
+  .about-stats {
+    flex-direction: row;
+    gap: clamp(32px, 6vw, 80px);
+  }
 }
 
-.stat-label.gold {
-  color: #c9a84c;
+@media (min-width: 768px) {
+  .about-hero {
+    padding: 80px 60px 60px;
+  }
+  .about-divider {
+    margin: 0 60px;
+  }
+  .about-stats {
+    padding: 80px 60px;
+  }
+  .about-body p {
+    font-size: 16px;
+  }
 }

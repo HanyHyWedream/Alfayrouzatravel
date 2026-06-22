@@ -1,11 +1,11 @@
 .tours-page {
   background-color: #f0ebe0;
   min-height: 100vh;
-  padding: 80px 60px;
+  padding: 48px 20px;
 }
 
 .tours-page-header {
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 
 .tours-page-label {
@@ -17,7 +17,7 @@
 }
 
 .tours-page-title {
-  font-size: 48px;
+  font-size: clamp(28px, 7vw, 48px);
   font-weight: 700;
   color: #1a1a1a;
   font-family: 'Georgia', serif;
@@ -25,8 +25,8 @@
 
 .tours-page-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  grid-template-columns: 1fr;
+  gap: 24px;
 }
 
 .tour-card {
@@ -37,9 +37,7 @@
   transition: transform 0.2s;
 }
 
-.tour-card:hover {
-  transform: translateY(-4px);
-}
+.tour-card:hover { transform: translateY(-4px); }
 
 .tour-image {
   position: relative;
@@ -70,9 +68,7 @@
   z-index: 1;
 }
 
-.tour-info {
-  padding: 20px;
-}
+.tour-info { padding: 20px; }
 
 .tour-meta {
   display: flex;
@@ -107,6 +103,14 @@
   font-weight: 600;
 }
 
-.tour-link:hover {
-  color: #c9a84c;
+.tour-link:hover { color: #c9a84c; }
+
+@media (min-width: 768px) {
+  .tours-page { padding: 80px 60px; }
+  .tours-page-header { margin-bottom: 48px; }
+  .tours-page-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1100px) {
+  .tours-page-grid { grid-template-columns: repeat(3, 1fr); }
 }

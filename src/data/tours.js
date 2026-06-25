@@ -179,6 +179,79 @@ const tours = [
     groupSize: 'Up to 8',
     language: 'English, Arabic',
   },
+  {
+  id: 'desert-safari',
+  badge: 'MULTI-DAY',
+  location: 'Egypt',
+  duration: '1–7 days',
+  title: 'Safari Trip in Egypt',
+  image: '/images/tents.jpeg',
+  description: 'From white chalk deserts to pyramid plateaus — adventures across Egypt\'s most breathtaking landscapes.',
+  included: [
+    '4x4 Off-road vehicle',
+    'Quad biking & dune buggies',
+    'Sandboarding on massive dunes',
+    'Bedouin dinner under the stars',
+    'Traditional music & tea',
+    'Expert local guide',
+  ],
+  about: 'Egypt\'s deserts are unlike anywhere else on earth. From the surreal chalk-white formations of the White Desert to the volcanic Black Desert, the mega-dunes of Siwa, and the historic plateau around the Pyramids of Giza — every safari is a different world. We run trips ranging from half-day quad biking adventures to multi-day camping expeditions deep into the Western Desert. Best visited October to May. Tell us your starting point, how much time you have, and your preferred activity level — and we\'ll design the perfect desert experience for you.',
+  groupSize: 'Up to 8',
+  language: 'English, Arabic',
+  gallery: [
+    '/images/whitemountain.jpeg',
+    '/images/whitemountain2.jpeg',
+    '/images/whitestuff.jpeg',
+    '/images/pyramids1.jpeg',
+    '/images/tents2.jpeg',
+    '/images/camels.jpeg',
+  ],
+  excursions: [
+    {
+      region: 'White Desert & Bahariya Oasis',
+      items: [
+        { name: 'White Desert National Park', desc: 'Surreal chalk-white rock formations glowing orange at sunset and silver under the moon.' },
+        { name: 'Black Desert', desc: 'Dark volcanic plateau scattered with iron-rich rocks — a dramatic contrast to the White Desert.' },
+        { name: 'Overnight Desert Camping', desc: 'Sleep under a sky full of stars with a Bedouin dinner cooked over an open fire.' },
+      ],
+    },
+    {
+      region: 'Siwa Oasis & Great Sand Sea',
+      items: [
+        { name: 'Mega-Dune 4x4 Bashing', desc: 'Navigate massive dunes near the Libyan border in Toyota Land Cruisers.' },
+        { name: 'Sandboarding', desc: 'Glide down some of the largest dunes in Egypt.' },
+        { name: 'Fossil Exploration', desc: '3 to 7-day treks through ancient landscapes and fossil sites.' },
+      ],
+    },
+    {
+      region: 'Red Sea Desert',
+      items: [
+        { name: 'Quad Biking & Dune Buggies', desc: 'Fast-paced guided off-trail driving from Hurghada or Sharm El Sheikh.' },
+        { name: 'Bedouin Village Visit', desc: 'Traditional tea, camel riding and barbecue dinner with fire shows.' },
+      ],
+    },
+    {
+      region: 'Fayoum Oasis',
+      items: [
+        { name: 'Wadi El-Hitan', desc: 'UNESCO World Heritage Fossil Valley just a few hours from Cairo.' },
+        { name: 'Magic Lake & Waterfalls', desc: 'Stunning natural scenery at Wadi El-Rayan.' },
+      ],
+    },
+    {
+      region: 'Giza Pyramids Safari',
+      items: [
+        { name: 'Camel Ride', desc: 'Ride across the desert plateau surrounding the Great Pyramids.' },
+        { name: 'ATV Quad Biking', desc: 'Explore the Giza plateau on quad bikes with a mix of history and adventure.' },
+      ],
+    },
+  ],
+  itineraries: [
+    { label: 'Half Day', route: 'Hurghada / Sharm / Giza' },
+    { label: '1–2 Days', route: 'Fayoum Oasis' },
+    { label: '3–7 Days', route: 'White Desert / Siwa' },
+  ],
+},
 ];
+
 
 export default tours;
